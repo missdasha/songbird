@@ -1,0 +1,37 @@
+.header {
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.top-header {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.score {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.categories {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.categories__item {
+  padding: 0.4rem 0.75rem;
+  flex: auto;
+  text-align: center;
+  background-color: #c0449d;
+  font-size: 1rem;
+}
+
+.categories__item.active {
+  background-color: #dd74bf;
+}
