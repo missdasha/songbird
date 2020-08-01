@@ -1,0 +1,24 @@
+.rhap_container {
+  background-color: #303030;
+  box-shadow: none;
+}
+.rhap_rewind-button, .rhap_forward-button {
+  display: none; 
+}
+
+.rhap_main-controls-button, .rhap_volume-button {
+  color: #c0449d;
+}
+
+.rhap_progress-indicator, .rhap_volume-indicator {
+  background-color: #c0449d;
+  box-shadow: none;
+}
+
+.rhap_play-pause-button {
+  outline: none;
+}
+
+.rhap_time {
+  color: #fff;
+}

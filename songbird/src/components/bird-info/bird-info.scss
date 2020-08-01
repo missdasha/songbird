@@ -1,0 +1,29 @@
+.bird-info {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid #444;
+
+  &__image {
+    width: 200px;
+    height: 150px;
+    border-radius: 0.25rem;
+    margin-right: 1.2rem;
+  }
+
+  &__overview {
+    display: flex;
+  }
+
+  .list-group {
+    width: 100%;
+
+    &-item {
+      padding: 0.25rem;
+    }
+  }
+
+  &__description {
+    margin: 1rem 0 0.75rem;
+  }
+}
+

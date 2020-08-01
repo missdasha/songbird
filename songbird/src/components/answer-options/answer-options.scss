@@ -1,0 +1,19 @@
+.answer-options {
+  .list-group-item {
+    height: 50px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #dd74bf;
+    }
+
+    .indicator {
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+      margin-right: 1.2rem;
+      display: inline-block;
+      background-color: #555;
+    }
+  }
+}

@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import './header.css';
+import './header.scss';
 
 export default class Header extends Component {
   render() {
     return (
       <header className="header d-flex">
           <div className="top-header d-flex">
-            <h1>Songbird</h1>
-            <p className="score"> Score: 
+            <h1>Song<span className="bird">bird</span></h1>
+            <p className="score">Score: 
               <span>10</span>
             </p>
           </div>
