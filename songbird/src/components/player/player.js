@@ -5,9 +5,11 @@ import './player.scss';
 
 export default class Player extends Component { 
   render() {
+    const { item }= this.props;
+
     return (
       <AudioPlayer
-        src="correct.mp3"
+        src={`${item.audio}`}
         customAdditionalControls={[]}
         onPlay={e => console.log("onPlay")}
       />

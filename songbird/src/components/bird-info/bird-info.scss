@@ -2,12 +2,14 @@
   display: flex;
   padding: 1rem;
   border: 1px solid #444;
+  height: 100%;
 
   &__image {
     width: 200px;
     height: 150px;
     border-radius: 0.25rem;
     margin-right: 1.2rem;
+    object-fit: cover;
   }
 
   &__overview {
@@ -18,7 +20,15 @@
     width: 100%;
 
     &-item {
-      padding: 0.25rem;
+      padding: 0.25rem 0;
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      .rhap_container {
+        padding: 3px 0;
+      }
     }
   }
 

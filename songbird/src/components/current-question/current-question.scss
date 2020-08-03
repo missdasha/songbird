@@ -2,25 +2,26 @@
   padding: 1rem;
   border: 1px solid #555;
   margin-bottom: 1.25rem;
-}
 
-.current-question__image {
-  width: 200px;
-  height: 150px;
-  border-radius: 0.25rem;
-}
+  &__image {
+    width: 200px;
+    height: 150px;
+    border-radius: 0.25rem;
+    object-fit: cover;
+  }
 
-.current-question__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 
-.current-question__info .list-group{
-  margin-left: 2.5rem;
-}
+    .list-group{
+      margin-left: 2.5rem;
 
-.current-question__info .list-group-item {
-  padding: 0;
+      .list-group-item {
+        padding: 0;
+      }
+    }
+  }
 }
