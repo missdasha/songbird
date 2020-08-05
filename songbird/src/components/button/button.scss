@@ -1,4 +1,4 @@
-.next-level.btn {
+.next.btn {
   width: 100%;
   background-color: #303030;
   border: 1px solid #555;
@@ -6,7 +6,7 @@
   cursor: initial !important;
 
   &.active {
-    cursor: pointer;
+    cursor: pointer !important;
     background-color: #c0449d;
     border: 1px solid #c0449d;
 

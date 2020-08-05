@@ -3,9 +3,11 @@ import './current-question.scss';
 import Player from '../player';
 import { birdsData } from '../../data';
 import { Consumer } from '../context';
+import image from '../../assets/img/bird.jpg';
 
 export default class CurrentQuestion extends Component {
   render() {
+    console.log(this.props.randomId);
     return (
       <Consumer>
         {
@@ -15,7 +17,7 @@ export default class CurrentQuestion extends Component {
 
             return  (
                       <div className="current-question d-flex jumbotron rounded">
-                        <img className="current-question__image" src={`${isGuessed ? randomItem.image : 'bird.jpg'}`} alt="bird"/>
+                        <img className="current-question__image" src={`${isGuessed ? randomItem.image : image}`} alt="bird"/>
                         <div className="current-question__info">
                           <ul className="list-group list-group-flush">
                               <li className="list-group-item">

@@ -11,7 +11,7 @@ const AnswerOption = ({onItemSelected, wrongIndicators, correctIndicators}) => {
           category => {
             return birdsData[category].map(({name}, ind) => {
               return  (
-                      <li className='list-group-item' onClick={(e) => onItemSelected(e, ind)} key={ind}>
+                      <li className='list-group-item' onClick={() => onItemSelected(ind)} key={ind}>
                         <span className={`indicator ${wrongIndicators.includes(ind) ? 'wrong' : correctIndicators.includes(ind) ? 'correct' : ''}`}></span>
                         {name}
                       </li>
