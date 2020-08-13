@@ -7,19 +7,26 @@ import BirdInfo from '../bird-info';
 import Button from '../button';
 import { Provider } from '../context';
 import GameEnd from '../game-end';
+import errorSound from '../../assets/audio/error.mp3';
+import successSound from '../../assets/audio/correct.mp3';
 
 export default class App extends Component {
-  state = {
-    score: 0,
-    category: 0,
-    isGuessed: false,
-    randomId: Math.round(Math.random() * 5),
-    selectedItem: -1,
-    correctIndicators: [],
-    wrongIndicators: [],
-    attempt: 0,
-    gameEnd: false
-  };
+  constructor(props) {
+    super(props);
+    this.playerRef = React.createRef();
+    this.state = {
+      score: 0,
+      category: 0,
+      isGuessed: false,
+      randomId: Math.round(Math.random() * 5),
+      selectedItem: -1,
+      correctIndicators: [],
+      wrongIndicators: [],
+      attempt: 0,
+      gameEnd: false
+    };
+  }
+  
 
   onItemSelected = (ind) => {
     this.checkChoice(ind);
@@ -27,21 +34,34 @@ export default class App extends Component {
   }
 
   checkChoice = (ind) => {
-    if (!this.state.isGuessed) {
-      if (ind === this.state.randomId) {
+    const { isGuessed, correctIndicators, wrongIndicators, randomId } = this.state;
+    if (!isGuessed && !correctIndicators.includes(ind) && !wrongIndicators.includes(ind)) {      
+      if (ind === randomId) {
         this.setState(state => ({
           correctIndicators: state.correctIndicators.concat([ind]),
           isGuessed: true,
           attempt: state.attempt + 1
-        }), () => this.updateScore());
+        }), () => {
+          this.updateScore();
+          this.playAudio(true);
+          console.log('this.playerRef.current.audio.pause(): ', this.playerRef.current);
+        });
       }
       else {
         this.setState(state => ({
           wrongIndicators: state.wrongIndicators.concat([ind]),
           attempt: state.attempt + 1
-        }));
+        }), () => {
+          this.playAudio(false);
+        });
       }
     }
+  }
+
+  playAudio = (isGuessed) => {
+    const audio = new Audio();
+    audio.src = isGuessed ? successSound : errorSound;
+    audio.play();
   }
 
   updateScore = () => {
@@ -92,7 +112,7 @@ export default class App extends Component {
           {
           !gameEnd ? 
           <Fragment>
-            <CurrentQuestion randomId={randomId} isGuessed={isGuessed}/>
+            <CurrentQuestion randomId={randomId} isGuessed={isGuessed} reference={this.playerRef}/>
             <div className="row mb2">
               <div className="col-md-6">
                 <AnswerOptions onItemSelected={this.onItemSelected} correctIndicators={correctIndicators} wrongIndicators={wrongIndicators}/>
@@ -102,11 +122,12 @@ export default class App extends Component {
               </div>
             </div>
             <Button isGuessed={isGuessed} onButtonClicked={this.onButtonNextClicked}>Следующий уровень</Button>
+            <audio src="../../assets/audio/correct.mp3"></audio>
+            <audio src="../../assets/audio/error.mp3"></audio>
           </Fragment>
           : 
             <GameEnd score={score} onButtonClicked={this.onButtonPlayAgainClicked}/>
           }
-
         </div>
       </Provider>
     );

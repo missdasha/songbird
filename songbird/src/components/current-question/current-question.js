@@ -7,13 +7,13 @@ import image from '../../assets/img/bird.jpg';
 
 export default class CurrentQuestion extends Component {
   render() {
-    console.log(this.props.randomId);
     return (
       <Consumer>
         {
           category => {
             const randomItem = birdsData[category][this.props.randomId];
             const { isGuessed } = this.props;
+            console.log(birdsData[category][this.props.randomId].name);
 
             return  (
                       <div className="current-question d-flex jumbotron rounded">
@@ -24,7 +24,7 @@ export default class CurrentQuestion extends Component {
                                 <h3>{isGuessed ? randomItem.name : '*****'}</h3>
                               </li>
                               <li className="list-group-item">
-                                <Player item={randomItem}/>
+                                <Player item={randomItem} ref={this.props.reference}/>
                               </li>
                             </ul>
                         </div>
