@@ -24,7 +24,7 @@ export default class CurrentQuestion extends Component {
                                 <h3>{isGuessed ? randomItem.name : '*****'}</h3>
                               </li>
                               <li className="list-group-item">
-                                <Player item={randomItem} ref={this.props.reference}/>
+                                <Player item={randomItem} reference={this.props.reference}/>
                               </li>
                             </ul>
                         </div>

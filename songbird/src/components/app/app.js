@@ -44,7 +44,7 @@ export default class App extends Component {
         }), () => {
           this.updateScore();
           this.playAudio(true);
-          console.log('this.playerRef.current.audio.pause(): ', this.playerRef.current);
+          this.playerRef.current.audio.current.pause();
         });
       }
       else {
