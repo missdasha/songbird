@@ -5,16 +5,15 @@ import './player.scss';
 
 export default class Player extends Component { 
   render() {
-    const { item } = this.props;
+    const { item, reference } = this.props;
 
     return (
       <AudioPlayer
-        ref={this.props.reference}
-        src={`${item.audio}`}
+        ref={reference}
+        src={item.audio}
         autoPlayAfterSrcChange={false}
         customAdditionalControls={[]}
-        onPlay={e => console.log("onPlay")}
-        onPause={e => console.log("onPause")}
+        onError={(e) => console.log('error', e)}
       />
     )
   }

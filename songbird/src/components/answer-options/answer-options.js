@@ -1,10 +1,9 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import './answer-options.scss';
 import { birdsData } from '../../data';
 import { Consumer } from '../context';
 
 const AnswerOption = ({onItemSelected, wrongIndicators, correctIndicators}) => {
-  console.log(wrongIndicators);
   return (
       <Consumer>
         {
@@ -23,7 +22,7 @@ const AnswerOption = ({onItemSelected, wrongIndicators, correctIndicators}) => {
       );
 }
 
-export default class AnswerOptions extends Component {
+export default class AnswerOptions extends PureComponent {
   render() {
     const {onItemSelected, correctIndicators, wrongIndicators } = this.props;
     

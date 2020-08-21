@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import './current-question.scss';
 import Player from '../player';
 import { birdsData } from '../../data';
 import { Consumer } from '../context';
 import image from '../../assets/img/bird.jpg';
 
-export default class CurrentQuestion extends Component {
+export default class CurrentQuestion extends PureComponent {
   render() {
     return (
       <Consumer>
