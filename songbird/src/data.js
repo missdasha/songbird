@@ -154,51 +154,51 @@ export const birdsData = [
   [
     {
       id: 1,
-      name: 'Жаворонок',
-      species: 'Alauda arvensis',
-      description: 'Жаворонки — перелетные птицы. С начала сентября они отлетают на юг. Возвращаются они в начале марта, независимо от того, сошел снег или нет. По прилету жаворонков определяли наступление весны и пору, когда пора пахать землю.',
-      image: 'https://live.staticflickr.com/65535/47105096764_f751fba568.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC462158-Skowronek_Alauda_arvensis_Poland_Jarek_Matusiak_%20-006%20skowronek%20%282%29.mp3'
+      name: 'Синица',
+      species: 'Parus',
+      description: 'Синиц не зря называют санитарами леса, так одна пара синиц в период гнездования оберегает от вредителей как минимум 40 деревьев.',
+      image: 'https://live.staticflickr.com/65535/49539039476_67009fdddd.jpg',
+      audio: 'https://raw.githubusercontent.com/missdasha/songbird-data/master/parus_major.mp3'
     },
     {
       id: 2,
-      name: 'Соловей',
-      species: 'Luscinia luscinia',
-      description: 'Соловьи поют с начала мая и до конца лета. Каждая песня соловья состоит из 12 повторяющихся элементов, которые еще называют коленами. Кроме собственных трелей, соловьи легко и хорошо перенимают пение других птиц.',
-      image: 'https://live.staticflickr.com/7605/27669397735_f3c21758f2.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/HILVWSADVL/XC513809-R07_0052%20Thrush%20Nightingale%20Snipe.mp3'
+      name: 'Снегирь',
+      species: 'Pyrrhula',
+      description: 'Любимое лакомство снегирей – семена ясеня. Так как ясени плодоносят только раз в два года, можно предположить, когда снегири будут делать налеты на сады.',
+      image: 'https://live.staticflickr.com/65535/49953809272_cdfc683973.jpg',
+      audio: 'https://raw.githubusercontent.com/missdasha/songbird-data/master/pyrrhula_nipalensis.mp3'
     },
     {
       id: 3,
-      name: 'Скворец',
-      species: 'Sturnus vulgaris',
-      description: 'Скворцы - перелётные птицы. Синхронный перелет больших стай скворцов называется мурмурацией. Это красивое и завораживающее явление – множество птиц будто танцуют в воздухе, образуя замысловатые фигуры, которые уменьшаются и увеличиваются в небе.',
-      image: 'https://live.staticflickr.com/65535/49357593971_9509fe1d7c.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC515519-2020.01.01_17.24_01.MP3'
+      name: 'Щегол',
+      species: 'Carduelis',
+      description: 'Щеглы быстро привыкают к людям, и даже могут возвратиться к хозяину после того, как он выпустил их на волю.',
+      image: 'https://live.staticflickr.com/65535/50254492943_30729102d7.jpg',
+      audio: 'https://raw.githubusercontent.com/missdasha/songbird-data/master/tringa_erythropus.mp3'
     },
     {
       id: 4,
-      name: 'Иволга',
-      species: 'Oriolus oriolus',
-      description: 'Мелодичность голоса иволги сравнивают со звучанием флейты. Человеку сложно разглядеть иволгу, так как она обитает высоко на деревьях. Иволга не только очень красивая, но и  полезная птица. Она уничтожает ядовитых гусениц, которых не поедают другие птицы.',
-      image: 'https://live.staticflickr.com/65535/47102184004_58a93380b9.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC491801-2019.07.07_06.28_01.mp3'
+      name: 'Бормотушка',
+      species: 'Iduna',
+      description: 'Бормотушки постоянно что-то напевают. Самец это делает даже ночью. Мелодия их пения похожа на призов или беспокойство: «чрэк-чрэк», иногда песня напоминает треск. ',
+      image: 'https://live.staticflickr.com/6079/6052703928_76fb94452f.jpg',
+      audio: 'https://raw.githubusercontent.com/missdasha/songbird-data/master/iduna_caligata.mp3'
     },
     {
       id: 5,
-      name: 'Свиристель',
-      species: 'Bombycilla garrulus',
-      description: 'У свиристели очень цепкие коготки, что помогает птице удерживаться на ветках и склевывать ягоды, которые труднее всего достать. В период ухаживаний самец предлагает самке ягоду или другое угощение. Если самка его принимает, то птицы создают пару.',
-      image: 'https://live.staticflickr.com//65535//49367433842_1b06da0e6b.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC517421-AB-004%20%282%29%20jemio%C5%82uszka.mp3'
+      name: 'Чиж',
+      species: 'Spinus',
+      description: 'Кроме своей собственной песни, чиж легко и очень достоверно может пародировать других птиц, если живет с ними по соседству.',
+      image: 'https://live.staticflickr.com/65535/50224011488_c720710ccb.jpg',
+      audio: 'https://raw.githubusercontent.com/missdasha/songbird-data/master/spinus_lawrencei.mp3'
     },
     {
       id: 6,
-      name: 'Щегол',
-      species: 'Carduelis carduelis',
-      description: 'Щеглы поют красиво и мелодично. И в природе, и в неволе они щебечут почти круглый год. В пении щегла различают более 20 переливчатых трелей. Щеглы привыкают к людям, и даже могут возвратиться к хозяину после того, как их выпустили на волю',
-      image: 'https://live.staticflickr.com//65535//49366257253_db3ce48b9a.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC489265-190724_07.58h_putter_biesbosch_%20boompjes%20langs%20open%20water_zang_1ex_ad_niet%20gezien_.mp3'
+      name: 'Чечётка',
+      species: 'Acanthis flammea',
+      description: 'Звук пения чечёток напоминает перестук каблуков в чечётке, откуда вид и получил свое название. ',
+      image: 'https://live.staticflickr.com/65535/49782553143_ab5abe6643.jpg',
+      audio: 'https://raw.githubusercontent.com/missdasha/songbird-data/master/acanthis_flammea.mp3'
     }
   ],
   [
@@ -288,7 +288,7 @@ export const birdsData = [
       id: 5,
       name: 'Галстучник',
       species: 'Charadrius hiaticula',
-      description: 'Для того, чтобы отвлечь непрошеных гостей, которые появляются у гнезда, галстучник притворяется раненым.',
+      description: 'Для того чтобы отвлечь непрошеных гостей, которые появляются у гнезда, галстучник притворяется раненым.',
       image: 'https://live.staticflickr.com/65535/48919616573_afde2630a2.jpg',
       audio: 'https://raw.githubusercontent.com/missdasha/songbird-data/master/charadrius_hiaticula.mp3'
     },
