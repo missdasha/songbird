@@ -1,0 +1,22 @@
+.next.btn {
+  width: 100%;
+  background-color: #303030;
+  border: 1px solid #555;
+  margin: 1.25rem 0;
+  cursor: initial !important;
+
+  &.active {
+    cursor: pointer !important;
+    background-color: #c0449d;
+    border: 1px solid #c0449d;
+
+    &:hover {
+      background-color: #dd74bf;
+      border: 1px solid #dd74bf;
+    }
+  }
+}
+
+.btn:focus {
+  box-shadow: none;
+}
